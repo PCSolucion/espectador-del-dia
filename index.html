@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espectador del Día - Twitch Widget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="pit-lane-container">
+        <div class="top-bar">MENSAJES</div>
+        <div class="driver-bar">
+            <div class="position-box">
+                <span id="viewerRank">1</span><span class="degree">º</span>
+            </div>
+            <div class="team-box">
+                <img src="https://res.cloudinary.com/pcsolucion/image/upload/v1742785431/Mercedes-Logo.svg_obpxws.png"
+                    alt="Mercedes Logo">
+            </div>
+            <div class="name-box">
+                <span id="viewerName">ESPECTADOR</span>
+            </div>
+        </div>
+        <div class="stats-bar">
+            <div class="stat-label">
+                <span>CHAT</span>
+                <span>HOY</span>
+            </div>
+            <div class="stat-value" id="messageCount">0</div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="tmi.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
