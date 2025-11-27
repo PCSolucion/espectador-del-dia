@@ -54,8 +54,8 @@ const viewerRankElement = document.getElementById('viewerRank');
 const widgetContainer = document.querySelector('.pit-lane-container');
 
 // Configuración de timing del widget
-const SHOW_DURATION = 7000; // 7 segundos visible
-const CYCLE_INTERVAL = 600000; // 10 minutos (600 segundos)
+const SHOW_DURATION = 45000; // 45 segundos visible
+const CYCLE_INTERVAL = 405000; // 6 minutos 45 segundos (6 min oculto + 45 seg visible)
 
 // Control de visibilidad del widget
 function showWidget() {
@@ -68,7 +68,7 @@ function showWidget() {
     widgetContainer.classList.remove('slide-out');
     widgetContainer.classList.add('slide-in');
 
-    // Después de 7 segundos, ocultar el widget
+    // Después de 45 segundos, ocultar el widget
     setTimeout(() => {
         hideWidget();
     }, SHOW_DURATION);
@@ -96,7 +96,7 @@ function startVisibilityCycle() {
         showWidget();
     }, 500);
 
-    // Repetir cada 10 minutos
+    // Repetir cada 6 minutos 45 segundos
     setInterval(() => {
         showWidget();
     }, CYCLE_INTERVAL);
