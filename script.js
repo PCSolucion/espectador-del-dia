@@ -22,7 +22,8 @@ const EXCLUDED_BOTS = [
     'soundalerts',
     'sery_bot',
     'lurxx',
-    'virgoproz'
+    'virgoproz',
+    'liiukiin'
 ];
 
 // Verificar si tmi.js cargó
